@@ -2,7 +2,10 @@ body{
   font-family: Arial;
   background-color: #f4f4f4;
   padding:30px ;
-  /* background-image: ; */
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-com-cidade-da-noite-em-luzes-de-neon_1441-2604.jpg?semt=ais_hybrid&w=740) ;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .app{
