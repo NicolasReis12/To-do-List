@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './App.css'
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -26,7 +26,22 @@ function App() {
   return (
     <div className='app'>
       <h1>Lista de tarefas</h1>
-      <div></div>
+      <div className='todo-list'>
+        {todos.map((todo)=>(
+          <div className="todo">
+            <div className="content">
+              <p>{todo.text}</p>
+              <div className="category">
+                <p>({todo.category})</p>
+              </div>
+              <div>
+                <button>Completar</button>
+                <button>Deletar</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
